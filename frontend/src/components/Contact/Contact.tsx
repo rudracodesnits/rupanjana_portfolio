@@ -140,7 +140,7 @@ export default function Contact() {
               icon={HiOutlineGlobeAlt}
               label="Website"
               value={contactData.website}
-              href={`https://${contactData.website}`}
+              href={contactData.website.startsWith('http') ? contactData.website : `https://${contactData.website}`}
               delay={0.4}
             />
           </div>

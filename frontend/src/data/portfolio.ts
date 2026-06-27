@@ -73,7 +73,7 @@ export const contactData = {
   address: 'Gurugram Sector 86',
   phone: '+91 9205007854',
   email: 'rupanjana.roy.modeling@gmail.com',
-  website: 'www.rupanjanaroy.in/portfolio',
+  website: 'rupanjana-portfolio.vercel.app',
 };
 
 // --- Measurements ---
