@@ -47,35 +47,38 @@ export default function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Parallax on the hero image
-      if (imageRef.current) {
-        gsap.to(imageRef.current, {
-          y: '20%',
-          scale: 1.05,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top top',
-            end: 'bottom top',
-            scrub: 1,
-          },
-        });
-      }
+      const mm = gsap.matchMedia();
 
-      // Content fade out on scroll
-      if (contentRef.current) {
-        gsap.to(contentRef.current, {
-          y: -50,
-          opacity: 0,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: '30% top',
-            end: 'bottom top',
-            scrub: 1,
-          },
-        });
-      }
+      // Only run parallax and fade animations on desktop / tablet (>768px)
+      mm.add("(min-width: 768px)", () => {
+        if (imageRef.current) {
+          gsap.to(imageRef.current, {
+            y: '20%',
+            scale: 1.05,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: 'top top',
+              end: 'bottom top',
+              scrub: 1,
+            },
+          });
+        }
+
+        if (contentRef.current) {
+          gsap.to(contentRef.current, {
+            y: -50,
+            opacity: 0,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: '30% top',
+              end: 'bottom top',
+              scrub: 1,
+            },
+          });
+        }
+      });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -130,7 +133,7 @@ export default function Hero() {
             transition={{ delay: 3.0, duration: 0.01 }}
           >
             <motion.span
-              className="block text-5xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-charcoal"
+              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-charcoal"
               style={{
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 400,
@@ -146,7 +149,7 @@ export default function Hero() {
               {profileData.firstName}
             </motion.span>
             <motion.span
-              className="block text-5xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-charcoal"
+              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-charcoal"
               style={{
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 400,
@@ -180,7 +183,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 3.8, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="flex gap-4"
+              className="flex flex-col xs:flex-row gap-3 xs:gap-4"
             >
               <MagneticButton href="#portfolio" variant="primary">
                 View Portfolio

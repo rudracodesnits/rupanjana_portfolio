@@ -143,7 +143,7 @@ export default function About() {
             {/* Large editorial quote */}
             <div className="about-quote mb-12 md:mb-16">
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.15] text-charcoal"
+                className="text-2xl xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.15] text-charcoal"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
                 <span className="about-quote-line block">Elegance is not about</span>

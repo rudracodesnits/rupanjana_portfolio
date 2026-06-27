@@ -12,26 +12,30 @@ export default function Experience() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Animate the vertical timeline line
-      if (lineRef.current) {
-        gsap.fromTo(
-          lineRef.current,
-          { scaleY: 0 },
-          {
-            scaleY: 1,
-            duration: 1.5,
-            ease: 'power3.out',
-            scrollTrigger: {
-              trigger: lineRef.current,
-              start: 'top 70%',
-              end: 'bottom 30%',
-              scrub: 1,
-            },
-          }
-        );
-      }
+      const mm = gsap.matchMedia();
 
-      // Animate each timeline entry
+      // Only animate timeline vertical line on desktop
+      mm.add("(min-width: 768px)", () => {
+        if (lineRef.current) {
+          gsap.fromTo(
+            lineRef.current,
+            { scaleY: 0 },
+            {
+              scaleY: 1,
+              duration: 1.5,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: lineRef.current,
+                start: 'top 70%',
+                end: 'bottom 30%',
+                scrub: 1,
+              },
+            }
+          );
+        }
+      });
+
+      // Entry reveals run on both mobile and desktop
       gsap.fromTo(
         '.timeline-entry',
         { y: 60, opacity: 0 },
@@ -118,7 +122,7 @@ export default function Experience() {
 
                   {/* Content */}
                   <div
-                    className={`ml-12 md:ml-0 md:w-[45%] ${
+                    className={`pl-12 md:pl-0 md:w-[45%] ${
                       isLeft ? 'md:pr-12 md:text-right' : 'md:pl-12 md:text-left'
                     }`}
                   >

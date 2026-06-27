@@ -139,7 +139,7 @@ export default function Lightbox({ images, currentIndex, onClose, onNavigate }: 
           {images.length > 1 && (
             <>
               <motion.button
-                className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center group"
+                className="hidden md:flex absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-20 w-12 h-12 items-center justify-center group"
                 onClick={() => onNavigate((currentIndex! - 1 + images.length) % images.length)}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -155,7 +155,7 @@ export default function Lightbox({ images, currentIndex, onClose, onNavigate }: 
               </motion.button>
 
               <motion.button
-                className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center group"
+                className="hidden md:flex absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-20 w-12 h-12 items-center justify-center group"
                 onClick={() => onNavigate((currentIndex! + 1) % images.length)}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}

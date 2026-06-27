@@ -93,7 +93,9 @@ export default function Measurements() {
           {measurements.map((m, index) => (
             <div
               key={m.label}
-              className="measurement-card group relative p-8 md:p-10 border border-white/5 hover:border-gold/20 transition-all duration-500"
+              className={`measurement-card group relative p-8 md:p-10 border border-white/5 hover:border-gold/20 transition-all duration-500 ${
+                m.value.length > 20 ? 'col-span-2 md:col-span-1 lg:col-span-2' : 'col-span-1'
+              }`}
             >
               {/* Decorative corner */}
               <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-gold/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
