@@ -69,12 +69,17 @@ export default function Reviews() {
                   </span>
 
                   {/* Quote text */}
-                  <p
-                    className="text-sm md:text-base leading-[1.8] text-charcoal/70 mb-8"
-                    style={{ fontFamily: 'var(--font-body)' }}
-                  >
-                    {review.quote}
-                  </p>
+                  <div className="mb-8 space-y-3">
+                    {review.quote.split('. ').map((sentence, idx, arr) => (
+                      <p
+                        key={idx}
+                        className="text-sm md:text-base leading-[1.95] tracking-wide text-charcoal/70"
+                        style={{ fontFamily: 'var(--font-body)' }}
+                      >
+                        {sentence}{idx < arr.length - 1 ? '.' : ''}
+                      </p>
+                    ))}
+                  </div>
 
                   {/* Reviewer info */}
                   <div className="border-t border-charcoal/5 pt-6">

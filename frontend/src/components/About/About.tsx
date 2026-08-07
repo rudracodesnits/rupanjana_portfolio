@@ -157,13 +157,16 @@ export default function About() {
             </div>
 
             {/* Description */}
-            <div className="about-desc-container mb-12">
-              <p
-                className="about-desc text-sm md:text-base leading-[1.8] text-grey-500 max-w-xl"
-                style={{ fontFamily: 'var(--font-body)' }}
-              >
-                {profileData.description}
-              </p>
+            <div className="about-desc-container mb-12 space-y-4 max-w-xl">
+              {profileData.description.split('. ').map((sentence, idx, arr) => (
+                <p
+                  key={idx}
+                  className="about-desc text-sm md:text-base leading-[2] tracking-wide text-grey-500"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  {sentence}{idx < arr.length - 1 ? '.' : ''}
+                </p>
+              ))}
             </div>
 
             {/* Divider */}

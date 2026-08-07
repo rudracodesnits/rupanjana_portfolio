@@ -128,7 +128,7 @@ export default function Measurements() {
                 </div>
               ) : (
                 <span
-                  className={`${m.value.length > 12 ? 'text-base md:text-lg text-grey-300 font-normal leading-relaxed' : 'text-3xl md:text-4xl lg:text-5xl text-white'} block`}
+                  className={`${m.value.length > 12 ? 'text-base md:text-lg text-grey-300 font-normal leading-[1.9] tracking-wide' : 'text-3xl md:text-4xl lg:text-5xl text-white'} block`}
                   style={{ fontFamily: m.value.length > 12 ? 'var(--font-body)' : 'var(--font-heading)' }}
                 >
                   {m.value}

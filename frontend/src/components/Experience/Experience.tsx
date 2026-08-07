@@ -147,12 +147,17 @@ export default function Experience() {
                       {entry.title}
                     </h3>
 
-                    <p
-                      className="text-sm leading-[1.7] text-grey-500"
-                      style={{ fontFamily: 'var(--font-body)' }}
-                    >
-                      {entry.description}
-                    </p>
+                    <div className="space-y-2">
+                      {entry.description.split('. ').map((sentence, idx, arr) => (
+                        <p
+                          key={idx}
+                          className="text-sm md:text-base leading-[2] tracking-wide text-grey-500"
+                          style={{ fontFamily: 'var(--font-body)' }}
+                        >
+                          {sentence}{idx < arr.length - 1 ? '.' : ''}
+                        </p>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Spacer for the other side */}

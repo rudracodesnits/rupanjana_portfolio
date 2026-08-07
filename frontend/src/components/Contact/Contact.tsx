@@ -91,16 +91,21 @@ export default function Contact() {
               Let&apos;s Work <em className="text-gold">Together</em>
             </motion.h2>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-sm md:text-base leading-[1.8] text-grey-500 max-w-md mb-10"
-              style={{ fontFamily: 'var(--font-body)' }}
-            >
-              {profileData.description}
-            </motion.p>
+            <div className="mb-10 space-y-4 max-w-md">
+              {profileData.description.split('. ').map((sentence, idx, arr) => (
+                <motion.p
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 + idx * 0.1, duration: 0.6 }}
+                  className="text-sm md:text-base leading-[2] tracking-wide text-grey-500"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  {sentence}{idx < arr.length - 1 ? '.' : ''}
+                </motion.p>
+              ))}
+            </div>
 
             {/* Decorative line */}
             <motion.div

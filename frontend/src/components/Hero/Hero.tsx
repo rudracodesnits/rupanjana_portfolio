@@ -97,11 +97,17 @@ export default function Hero() {
           ref={imageRef}
           className="w-full h-[120%] -top-[10%] relative"
         >
-          <img
-            src="/images/gallery/IMG_1709.PNG"
-            alt="Rupanjana Roy"
-            className="w-full h-full object-cover object-center"
-          />
+          <picture className="w-full h-full block">
+            <source
+              media="(max-width: 767px)"
+              srcSet="/images/gallery/IMG_1708.PNG"
+            />
+            <img
+              src="/images/gallery/IMG_1709.PNG"
+              alt="Rupanjana Roy"
+              className="w-full h-full object-cover object-[84%_20%] md:object-center"
+            />
+          </picture>
         </motion.div>
       </div>
 
@@ -133,7 +139,7 @@ export default function Hero() {
             transition={{ delay: 3.0, duration: 0.01 }}
           >
             <motion.span
-              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-charcoal"
+              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-red-600"
               style={{
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 400,
@@ -149,7 +155,7 @@ export default function Hero() {
               {profileData.firstName}
             </motion.span>
             <motion.span
-              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-charcoal"
+              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-red-600"
               style={{
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 400,
