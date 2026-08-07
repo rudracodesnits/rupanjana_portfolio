@@ -125,7 +125,7 @@ export default function Hero() {
             className="mb-6"
           >
             <span
-              className="text-[10px] tracking-[0.5em] uppercase text-charcoal/50 font-bold"
+              className="text-[10px] tracking-[0.5em] uppercase text-gold font-bold"
               style={{ fontFamily: 'var(--font-body)' }}
             >
               {profileData.edition}
