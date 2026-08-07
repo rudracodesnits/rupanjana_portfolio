@@ -139,7 +139,7 @@ export default function Hero() {
             transition={{ delay: 3.0, duration: 0.01 }}
           >
             <motion.span
-              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-red-600"
+              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-gold"
               style={{
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 400,
@@ -155,7 +155,7 @@ export default function Hero() {
               {profileData.firstName}
             </motion.span>
             <motion.span
-              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-red-600"
+              className="block text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] xl:text-[10rem] leading-[0.9] text-gold"
               style={{
                 fontFamily: 'var(--font-heading)',
                 fontWeight: 400,
