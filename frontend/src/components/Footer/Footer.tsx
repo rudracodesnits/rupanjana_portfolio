@@ -23,7 +23,7 @@ export default function Footer() {
           className="mb-12 md:mb-16"
         >
           <h2
-            className="text-4xl md:text-6xl lg:text-8xl text-white/5 select-none"
+            className="text-4xl md:text-6xl lg:text-8xl text-gold/40 select-none"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
             {profileData.name}
