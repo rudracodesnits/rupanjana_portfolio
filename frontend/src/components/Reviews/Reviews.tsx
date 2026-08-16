@@ -15,9 +15,9 @@ export default function Reviews() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 md:py-40 px-6 md:px-16 lg:px-24 bg-primary overflow-hidden"
+      className="relative py-24 md:py-40 px-8 md:px-20 lg:px-32 bg-primary overflow-hidden"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         {/* Section header */}
         <div className="mb-16 md:mb-24">
           <motion.span

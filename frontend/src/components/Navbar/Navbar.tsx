@@ -86,7 +86,7 @@ export default function Navbar() {
           )}
         />
 
-        <div className="relative max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between">
+        <div className="relative max-w-[1200px] mx-auto px-8 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <a
             href="#hero"

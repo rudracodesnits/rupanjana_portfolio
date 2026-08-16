@@ -27,7 +27,7 @@ function GalleryImageCard({
   return (
     <motion.div
       ref={cardRef}
-      className={`gallery-card cursor-pointer group break-inside-avoid mb-4 md:mb-8 ${image.src ? '' : aspectClasses[image.aspect]}`}
+      className={`gallery-card w-full cursor-pointer group break-inside-avoid mb-4 md:mb-8 ${image.src ? '' : aspectClasses[image.aspect]}`}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
@@ -118,9 +118,9 @@ export default function Gallery() {
       <section
         ref={sectionRef}
         id="portfolio"
-        className="relative py-24 md:py-40 px-6 md:px-16 lg:px-24 bg-white"
+        className="relative py-24 md:py-40 px-8 md:px-20 lg:px-32 bg-white"
       >
-        <div className="max-w-[1400px] mx-auto">
+        <div className="w-full mx-auto">
           {/* Section header */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-24">
             <div>
@@ -147,7 +147,7 @@ export default function Gallery() {
           </div>
 
           {/* Masonry Grid */}
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6">
+          <div className="w-full columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6">
             {filteredImages.map((image, index) => (
               <GalleryImageCard
                 key={image.id}

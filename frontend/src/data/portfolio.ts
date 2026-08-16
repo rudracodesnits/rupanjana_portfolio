@@ -150,6 +150,17 @@ export const galleryImages: GalleryImage[] = [
   { id: 5, src: '/images/gallery/IMG_1703.PNG', alt: 'Fitness Activewear', category: 'fitness', aspect: 'square', caption: 'nexus universe fashion week' },
   { id: 6, src: '/images/gallery/IMG_1704.PNG', alt: 'Promotional Launch', category: 'promotions', aspect: 'landscape', caption: 'nexus universe fashion week' },
   { id: 7, src: '/images/gallery/IMG_1708.PNG', alt: 'High Fashion Runway', category: 'high-fashion', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 8, src: '/images/gallery/DSC_6048.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 9, src: '/images/gallery/DSC_6049.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 10, src: '/images/gallery/DSC_6050.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 11, src: '/images/gallery/DSC_6051.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 12, src: '/images/gallery/DSC_6059.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 13, src: '/images/gallery/DSC_6063.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 14, src: '/images/gallery/DSC_6088.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 15, src: '/images/gallery/DSC_6089.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 16, src: '/images/gallery/DSC_6090.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 17, src: '/images/gallery/DSC_6095.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 18, src: '/images/gallery/DSC_6096.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
 ];
 
 // --- Experience ---

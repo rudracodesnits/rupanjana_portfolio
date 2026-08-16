@@ -68,11 +68,11 @@ export default function Experience() {
     <section
       ref={sectionRef}
       id="experience"
-      className="relative pt-32 pb-24 md:pt-56 md:pb-40 px-6 md:px-16 lg:px-24 bg-charcoal"
+      className="relative pt-32 pb-24 md:pt-56 md:pb-40 px-8 md:px-20 lg:px-32 bg-charcoal"
     >
       {/* Subtle top divider to separate from Measurements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="max-w-[1000px] mx-auto">
+      <div className="max-w-[900px] mx-auto">
         {/* Section header */}
         <div className="mb-16 md:mb-24 text-center">
           <motion.span

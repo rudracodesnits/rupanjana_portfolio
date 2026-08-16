@@ -114,9 +114,9 @@ export default function Hero() {
       {/* Content */}
       <div
         ref={contentRef}
-        className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-16 lg:px-24"
+        className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-8 md:px-20 lg:px-32"
       >
-        <div className="max-w-[1400px] mx-auto w-full">
+        <div className="max-w-[1200px] mx-auto w-full">
           {/* Edition tag */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

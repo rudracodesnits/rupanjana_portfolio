@@ -12,8 +12,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative py-16 md:py-24 px-6 md:px-16 lg:px-24 bg-charcoal border-t border-white/5">
-      <div className="max-w-[1400px] mx-auto">
+    <footer className="relative py-16 md:py-24 px-8 md:px-20 lg:px-32 bg-charcoal border-t border-white/5">
+      <div className="max-w-[1200px] mx-auto">
         {/* Large Name */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
