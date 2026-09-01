@@ -61,6 +61,7 @@ export default function Experience() {
     runway: 'text-gold',
     editorial: 'text-white/70',
     campaign: 'text-gold-light',
+    commercial: 'text-gold-light',
     event: 'text-grey-400',
   };
 

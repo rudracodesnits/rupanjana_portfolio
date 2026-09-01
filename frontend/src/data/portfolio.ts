@@ -44,7 +44,7 @@ export interface ExperienceEntry {
   year: string;
   title: string;
   description: string;
-  type: 'runway' | 'editorial' | 'campaign' | 'event';
+  type: 'runway' | 'editorial' | 'campaign' | 'event' | 'commercial';
 }
 
 export interface Review {
@@ -161,6 +161,7 @@ export const galleryImages: GalleryImage[] = [
   { id: 16, src: '/images/gallery/DSC_6090.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
   { id: 17, src: '/images/gallery/DSC_6095.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
   { id: 18, src: '/images/gallery/DSC_6096.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
+  { id: 19, src: '/images/gallery/IMG_1710.PNG', alt: 'Editorial Shoot', category: 'editorial', aspect: 'landscape', caption: 'Delhi Fashion Week 2026' },
 ];
 
 // --- Experience ---
@@ -176,10 +177,24 @@ export const experienceData: ExperienceEntry[] = [
   {
     id: 2,
     year: '2026',
+    title: 'Delhi Fashion Week 2026',
+    description: 'Walked at Delhi Fashion Week 2026.',
+    type: 'runway',
+  },
+  {
+    id: 3,
+    year: '2026',
+    title: 'Flipkart commercial shoot',
+    description: 'Professional commercial shoot for Flipkart',
+    type: 'commercial',
+  },
+  {
+    id: 4,
+    year: '2026',
     title: 'Portfolio Shoot',
     description: 'Professional portfolio shoot showcasing versatility and form.',
     type: 'editorial',
-  },
+  }
 ];
 
 // --- Reviews ---
