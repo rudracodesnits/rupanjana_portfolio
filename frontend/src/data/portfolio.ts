@@ -160,7 +160,7 @@ export const galleryImages: GalleryImage[] = [
   { id: 10, src: '/images/gallery/DSC_6050.jpeg', alt: 'Portfolio Shoot 2', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 2' },
   { id: 11, src: '/images/gallery/DSC_6051.jpeg', alt: 'Portfolio Shoot 2', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 2' },
   { id: 12, src: '/images/gallery/DSC_6059.jpeg', alt: 'Portfolio Shoot 2', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 2' },
-  { id: 13, src: '/images/gallery/DSC_6063.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
+  { id: 13, src: '/images/gallery/DSC_6063.jpeg', alt: 'Portfolio Shoot 2', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 2' },
   { id: 14, src: '/images/gallery/DSC_6088.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
   { id: 15, src: '/images/gallery/DSC_6089.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
   { id: 16, src: '/images/gallery/DSC_6090.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
@@ -203,7 +203,7 @@ export const outfitSets: OutfitSet[] = [
     id: 'portfolio-3',
     title: 'Portfolio Shoot 3',
     category: 'editorial',
-    coverImage: galleryImages[12], // DSC_6063.jpeg
+    coverImage: galleryImages[13], // DSC_6088.jpeg
     images: galleryImages.filter(img => img.caption === 'portfolio shoot 3'),
   },
   {
