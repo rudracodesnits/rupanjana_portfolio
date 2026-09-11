@@ -98,18 +98,9 @@ body {
   letter-spacing: 0.015em;
 }
 
-/* Hide default cursor when custom cursor is active */
-body.custom-cursor-active {
-  cursor: none;
-}
-
-body.custom-cursor-active a,
-body.custom-cursor-active button,
-body.custom-cursor-active [role="button"],
-body.custom-cursor-active input,
-body.custom-cursor-active textarea,
-body.custom-cursor-active select {
-  cursor: none;
+/* Standard default browser cursor */
+body {
+  cursor: auto;
 }
 
 /* --- Typography --- */

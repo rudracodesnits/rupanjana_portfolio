@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useLenis } from './hooks/useLenis';
-import CustomCursor from './components/Cursor/CustomCursor';
 import Loader from './components/Loader/Loader';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
@@ -19,9 +18,6 @@ export default function App() {
 
   return (
     <>
-      {/* Custom Cursor */}
-      <CustomCursor />
-
       {/* Loading Screen */}
       {!isLoaded && <Loader onComplete={() => setIsLoaded(true)} />}
 
