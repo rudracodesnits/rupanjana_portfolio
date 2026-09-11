@@ -162,6 +162,7 @@ export const galleryImages: GalleryImage[] = [
   { id: 17, src: '/images/gallery/DSC_6095.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
   { id: 18, src: '/images/gallery/DSC_6096.jpeg', alt: 'Portrait Session', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot' },
   { id: 19, src: '/images/gallery/IMG_1710.PNG', alt: 'Editorial Shoot', category: 'editorial', aspect: 'landscape', caption: 'Delhi Fashion Week 2026' },
+  { id: 20, src: '/images/gallery/IMG_1711.PNG', alt: 'Editorial Shoot', category: 'editorial', aspect: 'landscape', caption: 'Delhi Fashion Week 2026' },
 ];
 
 // --- Experience ---
