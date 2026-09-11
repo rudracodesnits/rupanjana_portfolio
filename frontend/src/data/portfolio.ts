@@ -152,7 +152,7 @@ export const galleryImages: GalleryImage[] = [
   { id: 2, src: '/images/gallery/IMG_1693.PNG', alt: 'Nexus Universe Fashion Week 1', category: 'runway', aspect: 'landscape', caption: 'nexus universe fashion week 1' },
   { id: 3, src: '/images/gallery/IMG_1696.PNG', alt: 'Nexus Universe Fashion Week 1', category: 'runway', aspect: 'portrait', caption: 'nexus universe fashion week 1' },
   { id: 4, src: '/images/gallery/IMG_1701.PNG', alt: 'Nexus Universe Fashion Week 2', category: 'runway', aspect: 'portrait', caption: 'nexus universe fashion week 2' },
-  { id: 5, src: '/images/gallery/IMG_1703.PNG', alt: 'Nexus Universe Fashion Week 2', category: 'runway', aspect: 'square', caption: 'nexus universe fashion week 2' },
+  { id: 5, src: '/images/gallery/IMG_1703.PNG', alt: 'Nexus Universe Fashion Week 2', category: 'runway', aspect: 'portrait', caption: 'nexus universe fashion week 2' },
   { id: 6, src: '/images/gallery/IMG_1704.PNG', alt: 'Nexus Universe Fashion Week 2', category: 'runway', aspect: 'landscape', caption: 'nexus universe fashion week 2' },
   { id: 7, src: '/images/gallery/IMG_1708.PNG', alt: 'Portfolio Shoot 1', category: 'high-fashion', aspect: 'portrait', caption: 'portfolio shoot 1' },
   { id: 8, src: '/images/gallery/DSC_6048.jpeg', alt: 'Portfolio Shoot 2', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 2' },
@@ -182,7 +182,7 @@ export const outfitSets: OutfitSet[] = [
     id: 'nexus-2',
     title: 'Nexus Universe Fashion Week 2',
     category: 'runway',
-    coverImage: galleryImages[3], // IMG_1701.PNG
+    coverImage: galleryImages[3], // IMG_1701.PNG (portrait)
     images: galleryImages.filter(img => img.caption === 'nexus universe fashion week 2'),
   },
   {
@@ -196,21 +196,21 @@ export const outfitSets: OutfitSet[] = [
     id: 'portfolio-2',
     title: 'Portfolio Shoot 2',
     category: 'editorial',
-    coverImage: galleryImages[7], // DSC_6048.jpeg
+    coverImage: galleryImages[10], // DSC_6051.jpeg
     images: galleryImages.filter(img => img.caption === 'portfolio shoot 2'),
   },
   {
     id: 'portfolio-3',
     title: 'Portfolio Shoot 3',
     category: 'editorial',
-    coverImage: galleryImages[13], // DSC_6088.jpeg
+    coverImage: galleryImages[17], // DSC_6096.jpeg
     images: galleryImages.filter(img => img.caption === 'portfolio shoot 3'),
   },
   {
     id: 'delhi-2026',
     title: 'Delhi Fashion Week 2026',
     category: 'runway',
-    coverImage: galleryImages[18], // IMG_1710.PNG
+    coverImage: galleryImages[19], // IMG_1710.PNG
     images: galleryImages.filter(img => img.caption === 'Delhi Fashion Week 2026'),
   },
 ];
