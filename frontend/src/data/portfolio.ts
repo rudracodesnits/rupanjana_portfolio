@@ -166,8 +166,8 @@ export const galleryImages: GalleryImage[] = [
   { id: 16, src: '/images/gallery/DSC_6090.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
   { id: 17, src: '/images/gallery/DSC_6095.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
   { id: 18, src: '/images/gallery/DSC_6096.jpeg', alt: 'Portfolio Shoot 3', category: 'editorial', aspect: 'portrait', caption: 'portfolio shoot 3' },
-  { id: 19, src: '/images/gallery/IMG_1710.PNG', alt: 'Delhi Fashion Week 2026', category: 'runway', aspect: 'landscape', caption: 'Delhi Fashion Week 2026' },
-  { id: 20, src: '/images/gallery/IMG_1711.PNG', alt: 'Delhi Fashion Week 2026', category: 'runway', aspect: 'landscape', caption: 'Delhi Fashion Week 2026' },
+  { id: 19, src: '/images/gallery/IMG_1710.PNG', alt: 'Delhi Fashion Week 2026', category: 'runway', aspect: 'portrait', caption: 'Delhi Fashion Week 2026' },
+  { id: 20, src: '/images/gallery/IMG_1711.PNG', alt: 'Delhi Fashion Week 2026', category: 'runway', aspect: 'portrait', caption: 'Delhi Fashion Week 2026' },
 ];
 
 export const outfitSets: OutfitSet[] = [

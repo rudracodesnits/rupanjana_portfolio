@@ -18,13 +18,7 @@ function OutfitCard({
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
 
-  const aspectClasses = {
-    portrait: 'aspect-[3/4]',
-    landscape: 'aspect-[4/3]',
-    square: 'aspect-square',
-  };
-
-  const aspectClass = aspectClasses[outfit.coverImage.aspect] || 'aspect-[3/4]';
+  const aspectClass = 'aspect-[3/4]';
 
   return (
     <motion.div
